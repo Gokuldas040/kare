@@ -1,0 +1,78 @@
+:root {
+  --shadow: rgba(0, 0, 0, 0.24);
+  --appColor:#1FAB89;
+  --text1:#FFFFFF;
+  --text2:#C2FFBB;
+  --highlight1:#28CC9E;
+  --warning:#FE0000;
+
+
+  --fs-xl: 5rem;
+  --fs-600: 4rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+  --fs-300:0.75rem;
+  
+}
+@media screen and (max-device-width: 320px){
+  .App {
+    display: none;
+  }
+
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  :root{
+    --fs-xl: 4rem;
+    --fs-600: 3rem;
+    --fs-500: 1.2rem;
+  }
+}
+* {
+  font-family: Poppins;
+}
+.App {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  background-color: var(--appColor);
+}
+.ButtonFilled {
+  padding: 0px 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 2px 5px var(--shadow);
+  font-size: var(--fs-400);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--appColor);
+  background-color: var(--text1);
+}
+.ButtonOutline {
+  padding: 0px 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: 3px solid var(--text1);
+  outline: none;
+  box-shadow: 1px 2px 5px var(--shadow);
+  font-size: var(--fs-400);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text1);
+  background-color: transparent;
+}
+.buttonLink {
+  border: none;
+  outline: none;
+  font-size: var(--fs-300);
+  font-weight: normal;
+  cursor: pointer;
+  color: #C2FFBB;
+  background-color: transparent;
+  text-decoration: underline;
+}

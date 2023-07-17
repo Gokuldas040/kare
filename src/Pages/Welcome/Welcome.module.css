@@ -1,0 +1,49 @@
+.mainSection {
+  position: relative;
+  padding: 3rem;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: var(--appColor);
+}
+.mainSection button {
+  float: right;
+}
+.welcomeBox {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+.welcomeBox h1 {
+  color: var(--text1);
+  font-size: var(--fs-500);
+  line-height: 1.2;
+}
+.welcomeBox h4 {
+  color: var(--text1);
+  font-size: var(--fs-300);
+  font-weight: normal;
+  line-height: 1.2;
+  word-wrap: break-word;
+  text-align: left;
+}
+/* ************************table************************ */
+.welcomeBox table {
+  color: var(--text1);
+  font-size: var(--fs-300);
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid var(--text1);
+  overflow: scroll;
+}
+.welcomeBox table th,
+.welcomeBox table td {
+  border: 1px solid var(--text1);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  .mainSection {
+    padding: 2rem;
+    height: 100vh;
+  }
+}

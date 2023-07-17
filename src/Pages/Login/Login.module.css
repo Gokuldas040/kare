@@ -1,0 +1,87 @@
+.mainSection {
+  position: relative;
+  padding: 3rem;
+  top: 0;
+  bottom: 0;
+  height: 90vh;
+  background-color: var(--appColor);
+}
+.mainContent {
+  height: 80vh;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.leftSection{
+  border-right: 2px solid var(--text1);
+}
+.leftSection h1{
+  color: var(--text1);
+  font-size: var(--fs-500);
+  line-height: 1.2;
+}
+.rightSection{
+  padding: 1rem 3rem;
+}
+
+/*************************loginpage *******************************/
+.inputBox{
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.inputBox input{
+  border:none;
+  border-bottom: 1px solid var(--text1);
+  width: 80%;
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+
+}
+.inputBox ::placeholder { 
+  color: var(--text1);
+  font-size: var(--fs-300);
+  line-height: 1.2;
+  opacity: 1;
+}
+.inputBox button {
+  width: 80%;
+}
+.inputBox h6{
+  color: var(--warning);
+  font-size: var(--fs-300);
+  font-weight: normal;
+  opacity: 1;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  .mainSection {
+    padding: 2rem;
+    height: 100vh;
+  }
+  .mainContent{
+    height: 100vh;
+  }
+  .leftSection, .rightSection{
+    grid-column: span 2;
+  }
+  .leftSection{
+    border: none;
+    border-bottom: 1px solid var(--text1);
+  }
+  .rightSection{
+    padding: 1rem;
+  }
+}
+
